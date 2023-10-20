@@ -1,0 +1,160 @@
+#anime {
+  animation-name: animasi;
+  animation-duration: 2s;
+}
+
+@keyframes animasi {
+  0% {
+    bottom: 600px;
+  }
+  2% {
+    bottom: 588px;
+  }
+  4% {
+    bottom: 576px;
+  }
+  6% {
+    bottom: 564px;
+  }
+  8% {
+    bottom: 552px;
+  }
+  10% {
+    bottom: 540px;
+  }
+  12% {
+    bottom: 528px;
+  }
+  14% {
+    bottom: 516px;
+  }
+  16% {
+    bottom: 504px;
+  }
+  18% {
+    bottom: 492px;
+  }
+  20% {
+    bottom: 480px;
+  }
+  22% {
+    bottom: 468px;
+  }
+  24% {
+    bottom: 456px;
+  }
+  26% {
+    bottom: 444px;
+  }
+  28% {
+    bottom: 432px;
+  }
+  30% {
+    bottom: 420px;
+  }
+  32% {
+    bottom: 408px;
+  }
+  34% {
+    bottom: 396px;
+  }
+  36% {
+    bottom: 384px;
+  }
+  38% {
+    bottom: 372px;
+  }
+  40% {
+    bottom: 360px;
+  }
+  42% {
+    bottom: 348px;
+  }
+  44% {
+    bottom: 336px;
+  }
+  46% {
+    bottom: 324px;
+  }
+  48% {
+    bottom: 312px;
+  }
+  50% {
+    bottom: 300px;
+  }
+  52% {
+    bottom: 288px;
+  }
+  54% {
+    bottom: 276px;
+  }
+  56% {
+    bottom: 264px;
+  }
+  58% {
+    bottom: 252px;
+  }
+  60% {
+    bottom: 240px;
+  }
+  62% {
+    bottom: 228px;
+  }
+  64% {
+    bottom: 216px;
+  }
+  66% {
+    bottom: 204px;
+  }
+  68% {
+    bottom: 192px;
+  }
+  70% {
+    bottom: 180px;
+  }
+  72% {
+    bottom: 168px;
+  }
+  74% {
+    bottom: 156px;
+  }
+  76% {
+    bottom: 144px;
+  }
+  78% {
+    bottom: 132px;
+  }
+  80% {
+    bottom: 120px;
+  }
+  82% {
+    bottom: 108px;
+  }
+  84% {
+    bottom: 96px;
+  }
+  86% {
+    bottom: 84px;
+  }
+  88% {
+    bottom: 72px;
+  }
+  90% {
+    bottom: 60px;
+  }
+  92% {
+    bottom: 48px;
+  }
+  94% {
+    bottom: 36px;
+  }
+  96% {
+    bottom: 24px;
+  }
+  98% {
+    bottom: 12px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
