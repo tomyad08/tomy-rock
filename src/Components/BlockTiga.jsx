@@ -71,7 +71,7 @@ const Blocktiga = () => {
                   src={value.picture}
                   width={400}
                   height={400}
-                  className="rounded-lg drop-shadow-xl"
+                  className="rounded-lg drop-shadow-xl border border-4 border-slate-300"
                   alt=" "
                 />
                 {condition && (
