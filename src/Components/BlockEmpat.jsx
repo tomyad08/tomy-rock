@@ -1,7 +1,10 @@
+"use client";
 import { DataWoriking } from "@/DataStatic/DataWorking";
+import { useState } from "react";
 
 const BlockEmpat = () => {
   const listWorking = DataWoriking;
+
   return (
     <div
       className="bg-slate-200 text-black p-4 md:p-10"
@@ -14,9 +17,10 @@ const BlockEmpat = () => {
         <div className="w-full md:w-3/4">
           {listWorking.map((value) => (
             <div key={value.id}>
-              <h1 className="text-lg font-semibold text-red-800 border-b-2 border-slate-200 my-4">
+              <h1 className="text-sm md:text-lg font-semibold text-red-800 border-b-2 border-slate-200 my-4">
                 {value.company}
               </h1>
+
               <p className="text-sm">• {value.list1}</p>
               <p className="text-sm">• {value.list2}</p>
               <p className="text-sm">• {value.list3}</p>

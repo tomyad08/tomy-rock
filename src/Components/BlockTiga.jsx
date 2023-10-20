@@ -2,6 +2,7 @@
 import { DataSkill } from "@/DataStatic/DataSkill";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -10,6 +11,7 @@ const { DataPriority } = require("@/DataStatic/DataPriority");
 const Blocktiga = () => {
   const Data = DataPriority;
   const Skill = DataSkill;
+  const [condition, setCondition] = useState(false);
 
   const responsive = {
     superLargeDesktop: {
@@ -45,16 +47,16 @@ const Blocktiga = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 3,
+      items: 5,
     },
   };
 
   return (
     <div
-      className="bg-red-800 p-5"
+      className="bg-red-800 p-2"
       style={{ backgroundImage: 'url("/backk.png")' }}
     >
-      <div className="mx-5">
+      <div className="mx-2">
         <h1
           className="text-4xl font-semibold text-center text-white my-5"
           style={{ fontFamily: "new-rock" }}
@@ -69,43 +71,52 @@ const Blocktiga = () => {
                   src={value.picture}
                   width={400}
                   height={400}
-                  className="rounded-lg"
+                  className="rounded-lg drop-shadow-xl"
                   alt=" "
                 />
-                <div className="p-2">
-                  <p className=" text-center my-2 font-semibold">
-                    {value.name}
-                  </p>
-                  <p className="text-sm text-justify">{value.description}</p>
-                </div>
+                {condition && (
+                  <div>
+                    <div className="p-2">
+                      <p className=" text-center my-2 font-semibold">
+                        {value.name}
+                      </p>
+                      <p className="text-sm text-justify">
+                        {value.description}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             </Link>
           ))}
         </Carousel>
         <div className="flex justify-center mt-5">
-          <button className="bg-yellow-300 p-2 w-52 text-black font-semibold rounded-lg">
-            More
+          <button
+            className="bg-yellow-500 drop-shadow-xl p-2 w-52 text-black font-semibold rounded-lg"
+            onClick={() => setCondition(!condition)}
+          >
+            See Detail
           </button>
         </div>
-        <Carousel responsive={responsiveSkill} infinite={true}>
-          {Skill.map((value) => (
-            <div className="mt-10" key={value.id}>
-              <div className="flex justify-center">
-                <Image
-                  src={value.picture}
-                  alt=" "
-                  width={70}
-                  height={70}
-                  className="p-1 rounded-full -z-10"
-                />
-              </div>
-              <p className="text-sm text-white font-semibold text-center">
-                {value.name}
-              </p>
-            </div>
-          ))}
-        </Carousel>
       </div>
+      <Carousel responsive={responsiveSkill} infinite={true}>
+        {Skill.map((value) => (
+          <div className="mt-10" key={value.id}>
+            <div className="flex justify-center">
+              <Image
+                src={value.picture}
+                alt=" "
+                width={50}
+                height={50}
+                className="p-1 rounded-full -z-10"
+              />
+            </div>
+            <p className="text-sm text-white font-semibold text-center">
+              {value.name}
+            </p>
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };
