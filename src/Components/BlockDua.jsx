@@ -47,7 +47,7 @@ const BlockDua = () => {
             height={250}
             alt=" "
             id="anime"
-            className="absolute bottom-0 xl:bottom:0 -z-10"
+            className="absolute bottom-0 xl:bottom:0 -z-10 "
           />
         </div>
       </div>
