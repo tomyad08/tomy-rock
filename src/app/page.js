@@ -10,12 +10,6 @@ export default function Home() {
       <Blocktiga />
       <BlockEmpat />
       <BlockLima />
-
-      <div className="hidden md:flex fixed top-5 right-5">
-        <audio controls autoPlay loop>
-          <source src="/audio1.mp3" type="audio/mp3" />
-        </audio>
-      </div>
     </div>
   );
 }
